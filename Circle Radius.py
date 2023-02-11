@@ -5,7 +5,7 @@ import math
 # Calculate area and circ of circle with radius
 
 while True:
-    # Prompt the user to enter the radius of the circle
+    # Prompt the user to enter the radius of the circle and store it as a string
     circle_rad = input("Enter the radius of a circle: ")
 
     try:
@@ -14,10 +14,10 @@ while True:
 
         # Check if the radius is positive
         if radius > 0:
-            # If the radius is positive, exit the loop
+            # If true, exit the loop
             break
         else:
-            # If the radius is not positive, display an error message
+            # If false, display an error message
             print("Please enter a positive number.")
     except ValueError:
         # If the input cannot be converted to a floating-point number, display an error message
